@@ -1,52 +1,87 @@
-@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
 * {
+  margin: 0;
   padding: 0;
-  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
 }
-
-.header {
-  background-color: #f38ba0;
-}
-.header h1 {
-  color: white;
-  text-align: center;
-  margin: 0;
-  padding: 1em;
-}
-.nav-main {
-  background-color: #053742;
-  height: 2.2em;
-}
-.nav-list {
-  list-style-type: none;
-  float: right;
-}
-.nav-names {
-  display: inline-block;
-  float: left;
-  line-height: 2.4em;
-  padding-right: 1em;
-}
-.nav-names a {
-  color: white;
-
-  font-weight: bold;
-}
-a.logo {
-  color: white;
-  font-size: 1.7em;
-  font-weight: bold;
-  line-height: 1.3em;
-  margin-left: 3em;
-
-  text-decoration: none;
-}
-
-nav ul li a {
-  text-decoration: none;
-}
-
 body {
-  font-family: "STIX Two Math", sans-serif;
+  background-color: #f7dad9;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.menu-main {
+  display: flex;
+  background-color: #f38ba0;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+}
+
+.logo {
+  text-transform: uppercase;
+}
+
+.logo a {
+  text-decoration: none;
+
+  color: white;
+}
+
+.logo a:hover {
+  color: yellow;
+}
+
+.list-menu {
+  list-style-type: none;
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+}
+
+.menu-names {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu-names a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-names a:hover {
+  color: yellow;
+}
+
+/* ANIMATION */
+.logo:hover {
+  transform: scale(1.5);
+}
+
+.list-menu :hover {
+  transform: scale(1.5);
+}
+
+/* END ANIMATION */
+
+/*              */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 10px;
+  column-gap: 10px;
+}
+.grid-item-main {
+  display: grid;
+  text-align: left;
+}
+
+.grid-item-sidebar {
+  display: grid;
+  align-items: center;
+  text-align: center;
 }
