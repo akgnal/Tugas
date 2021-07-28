@@ -1,87 +1,146 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto Slab", serif;
-}
-body {
-  background-color: #f7dad9;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  font-family: "Otomanopee One", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
 }
 
-.menu-main {
+.main-header {
   display: flex;
-  background-color: #f38ba0;
+  background-image: url(assets/joel-filipe-QwoNAhbmLLo-unsplash.jpg);
+  background-repeat: no-repeat;
+
+  background-size: 100%;
+
+  background-position: center;
+  min-width: 300px;
+  height: 12rem;
   align-items: center;
-  justify-content: space-around;
-  height: 70px;
+  justify-content: center;
+  color: white;
+}
+
+.wrapper-navbar {
+  display: flex;
+  background-color: gray;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+
+.wrapper-navbar a,
+li {
+  color: white;
+  display: inline-block;
+}
+
+.iseng {
+  padding-right: 200px;
+}
+
+.wrapper-navbar a:hover {
+  transform: scale(1.5);
 }
 
 .logo {
-  text-transform: uppercase;
-}
-
-.logo a {
-  text-decoration: none;
-
   color: white;
 }
 
-.logo a:hover {
-  color: yellow;
+.logo-quotes {
+  color: white;
 }
 
-.list-menu {
-  list-style-type: none;
+.nav-main a {
+  text-decoration: none;
+}
+.nav-main img {
+  height: 2rem;
+}
+
+/* MAIN */
+
+main {
+  background-color: grey;
+}
+.main-menu {
+  height: 15rem;
   display: flex;
-  width: 20%;
-  justify-content: space-around;
 }
 
-.menu-names {
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.menu-names a {
-  text-decoration: none;
-  color: white;
-}
-
-.menu-names a:hover {
-  color: yellow;
-}
-
-/* ANIMATION */
-.logo:hover {
-  transform: scale(1.5);
-}
-
-.list-menu :hover {
-  transform: scale(1.5);
-}
-
-/* END ANIMATION */
-
-/*              */
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  padding-top: 10px;
-  column-gap: 10px;
-}
-.grid-item-main {
-  display: grid;
-  text-align: left;
-}
-
-.grid-item-sidebar {
-  display: grid;
+.quotes-main {
+  display: flex;
+  flex-grow: 1.2;
+  justify-content: center;
   align-items: center;
+}
+.main-menu aside {
+  display: flex;
+  justify-content: left;
+  flex-grow: 1;
+}
+
+.nama-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-items: left;
+}
+
+.main-menu aside .about-main {
+  background-color: aqua;
+}
+
+.foto-diri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.foto-diri img {
+  height: 70%;
+}
+
+.about-main {
+  background-color: honeydew;
+}
+
+/*section */
+
+.wrapper-main {
+  background-color: aqua;
   text-align: center;
+}
+
+.section-about-main {
+  display: grid;
+  justify-items: center;
+
+  text-align: center;
+}
+
+.section-about-main h1 {
+  display: grid;
+  grid-template-columns: 25rem;
+}
+
+.section-about-main article {
+  display: grid;
+  grid-template-columns: 60rem;
+}
+
+.section-about-main img {
+  height: 25rem;
+  width: 65rem;
+}
+
+.contenct-1 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
